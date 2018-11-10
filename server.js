@@ -2,7 +2,7 @@ const express = require('express');
 const hbs = require('hbs'); //http://handlebarsjs.com/
 const fs = require('fs');
 
-const port = process.env.POST || 3000;
+const port = process.env.PORT || 3000;
 var app = express();
 
 hbs.registerPartials(__dirname + '/views/partials');
